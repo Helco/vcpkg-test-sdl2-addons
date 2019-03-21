@@ -16,6 +16,7 @@ add_executable(test
 )
 target_link_libraries(test PRIVATE
     SDL2::SDL2
+    SDL2::SDL2main
     SDL2::SDL2_ttf
     SDL2::SDL2_image
     SDL2::SDL2_mixer

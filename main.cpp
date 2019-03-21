@@ -4,7 +4,7 @@
 #include <SDL_mixer.h>
 #include <SDL_net.h>
 
-int main()
+int main(int argc, char* argv[])
 {
     SDL_Init(0);
     TTF_Init();
