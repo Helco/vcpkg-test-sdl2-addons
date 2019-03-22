@@ -1,0 +1,25 @@
+language: cpp
+
+matrix:
+  include:
+  - os: osx
+    osx_image: xcode10.1
+    env:
+      - CC=gcc-8
+      - CXX=g++-8
+    compiler: gcc
+
+addons:
+  homebrew:
+    packages:
+      - cmake
+      - gcc@8
+      - gcc@7
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - gcc-8
+    - g++-8
+
+script: bash ./travis.sh
